@@ -1,6 +1,7 @@
 import React,{ useState } from 'react'
 import Navbar from '../component/Navbar'
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
+import Footer from '../component/Footer';
 
 
 const Donation = () => {
@@ -114,6 +115,7 @@ const Donation = () => {
         </div>
         </div>
        </div>
+       <Footer />
     </div>
   )
 }

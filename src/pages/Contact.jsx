@@ -2,6 +2,8 @@ import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { MdEditLocation } from "react-icons/md";
+import Footer from '../component/Footer'
+
 
 const Contact = () => {
   return (
@@ -57,6 +59,7 @@ const Contact = () => {
             </form>
         </div> 
         </div>
+        <Footer />
     </div>
   )
 }

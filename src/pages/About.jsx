@@ -3,6 +3,8 @@ import { BsChevronCompactRight,BsChevronCompactLeft } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx';
 import Navbar from '../component/Navbar';
 import { Link } from 'react-router-dom';
+import Footer from '../component/Footer'
+
 
 const About = () => {
 
@@ -79,6 +81,7 @@ const About = () => {
             <p className='text-white m-3'><span className='text-2xl text-gray-300'>Get Involved</span><br />
             Join us in our mission to make quality education accessible to all children. Whether through volunteering, fundraising, or spreading awareness, there are many ways you can support our cause and make a difference in the lives of underprivileged children. Together, let's build a world where every child has the chance to learn, grow, and succeed. <Link className='font-semibold'>click to me to get involve</Link></p>
     </div>
+            <Footer />
     </div>
   )
 }

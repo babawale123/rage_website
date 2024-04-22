@@ -3,6 +3,7 @@ import Navbar from '../component/Navbar'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { IoMdMail } from 'react-icons/io'
 import { MdEditLocation } from 'react-icons/md'
+import Footer from '../component/Footer'
 
 
 const Volunteer = () => {
@@ -50,6 +51,7 @@ const Volunteer = () => {
               </div> 
           </div>
         </div>
+        <Footer />
     </div>
   )
 }

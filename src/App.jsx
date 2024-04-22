@@ -5,6 +5,7 @@ import Slider from './component/Slider'
 import About from './pages/About'
 import Volunteer from './pages/Volunteer'
 import Donation from './pages/Donation'
+import Causes from './pages/Causes'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="volunteer" element={<Volunteer />} />
         <Route path="donation" element={<Donation />} />
+        <Route path="causes" element={<Causes />} />
      </Routes>
     </>
   )

@@ -13,7 +13,11 @@ const Slider = () => {
         {url:'https://images.unsplash.com/photo-1664990594725-552201db8079?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
 
         {url:'https://www.shutterstock.com/image-photo/abuja-nigeria-june-6-2022-260nw-2169606685.jpg'},
+        
+
+        {url:'https://images.unsplash.com/photo-1547226706-af7e2c20bcea?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
     ];
+    
     
     const [currentIndex, setCurrentIndex] = useState(0)
 

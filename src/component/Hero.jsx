@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
           <p className='text-[#FFFFFF] text-2xl font-bold uppercase'>Free <Typewriter words={['education for one million Nigerian children','Tutor fee paid by R.A.G.E']} loop={true} /> </p>
 
           <p className='md:text-2xl text-xl font-bold text-gray-500'>Providing Free Education For One million Nigerian children between the ages of 3 to 17 years</p>
-          <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Make Donation</button>
+          <Link to='/donation' className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Make Donation</Link>
         </div>
     </div>
   )

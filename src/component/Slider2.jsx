@@ -2,19 +2,14 @@ import React, { useState } from 'react'
 import { BsChevronCompactRight,BsChevronCompactLeft } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx';
 
-const Slider = () => {
+const Slider2 = () => {
 
     const slider = [
         {url:'https://images.unsplash.com/photo-1532708059644-5590ed51ce4c?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
 
         {url:'https://images.unsplash.com/photo-1664990594667-9bd4c60cbcfb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
 
-        {url:'https://images.unsplash.com/photo-1664990594725-552201db8079?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
-
-        {url:'https://www.shutterstock.com/image-photo/abuja-nigeria-june-6-2022-260nw-2169606685.jpg'},
-        
-
-        {url:'https://images.unsplash.com/photo-1547226706-af7e2c20bcea?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
+        {url:'https://images.unsplash.com/photo-1664990594725-552201db8079?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},        
     ];
     
     
@@ -61,4 +56,4 @@ const Slider = () => {
   )
 }
 
-export default Slider
+export default Slider2

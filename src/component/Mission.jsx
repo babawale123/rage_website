@@ -1,6 +1,7 @@
 import React from 'react'
 import children from '../assets/children.jpg'
 import Slider from './Slider'
+import { Link } from 'react-router-dom'
 
 const Mission = () => {
   return (
@@ -15,7 +16,7 @@ const Mission = () => {
                     Vision Statement:
                     "Our vision is a world where every child has the opportunity to receive a quality education, regardless of their background or circumstances. We envision empowered communities where education serves as a catalyst for positive change, unlocking the full potential of every child and building a brighter future for generations to come."</p>
 
-                    <button className='text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3 bg-black'>Voluteer</button>
+                    <Link to='/volunteer' className='text-[#00df9a] text-center w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3 bg-black'>Voluteer</Link>
             </div>
         </div>
         

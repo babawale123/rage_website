@@ -9,16 +9,16 @@ const Newletter = () => {
 
     const handleSubmit = async(e) => {
             e.preventDefault()
-
             try {
               const config = {
                 headers: {
-                  'Content-type':'application/json',
+                    'Content-Type': 'application/json',
                 }
-              }
+            };
   
-              const response = await axios.post('https://theragebackend.pythonanywhere.com/api/newletter/',{email}, config) 
+              const response = await axios.post(`https://theragebackend.pythonanywhere.com/api/newletter/`,{email}, config) 
               const data = response.data
+              console.log(data)
               setEmail(data)
               toast.success("You have successfully subscribe to our newsletter!!! stay tuned for more updates.")
               console.log(email)

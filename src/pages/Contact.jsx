@@ -50,18 +50,18 @@ const Contact = () => {
                 <div>
                     <label className='text-sm'>Full Name</label>
 
-                    <input type="text" value={name} onChange={(e)=>setName(e.target.value)} placeholder='Your name' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
+                    <input type="text" required value={name} onChange={(e)=>setName(e.target.value)} placeholder='Your name' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
                 </div>
 
                 <div>
                     <label className='text-sm'>Email</label>
 
-                    <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Your Email' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
+                    <input type="email" required value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Your Email' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
                 </div>
 
                 <div>
                 <label className='text-sm'>Message</label>
-                    <textarea value={message} onChange={(e)=>setMessage(e.target.value)} placeholder='Your Email' 
+                    <textarea required value={message} onChange={(e)=>setMessage(e.target.value)} placeholder='Your Email' 
                     rows="4"
                     className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]'>
                     </textarea>

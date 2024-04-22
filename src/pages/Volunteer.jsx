@@ -1,16 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../component/Navbar'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { IoMdMail } from 'react-icons/io'
 import { MdEditLocation } from 'react-icons/md'
 import Footer from '../component/Footer'
+import toast, { Toaster } from 'react-hot-toast'
 
 
 const Volunteer = () => {
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [address, setAddress] = useState("")
+    const [phone, setPhone] = useState("")
+
+    const handleSubmit = (e) => {
+            e.preventDefault()
+            toast.success("Your data has been sent successfully w'll contact you shortly!")
+            console.log(name,email)
+    }
   return (
     <div>
         <Navbar />
         <div className='w-full py-16 px-4 bg-white'>
+        <Toaster />
           <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
               <div className='flex flex-col item-center'>
                   <div>
@@ -22,29 +35,29 @@ const Volunteer = () => {
               </div>
 
               <div className='text-gray-600 '>
-              <form className='flex flex-col space-y-4'>
+              <form onSubmit={handleSubmit} className='flex flex-col space-y-4'>
                   <div>
                       <label className='text-sm'>Full Name</label>
 
-                      <input type="text" placeholder='Your name' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
+                      <input required type="text" value={name} onChange={(e)=>setName(e.target.value)} placeholder='Your name' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
                   </div>
 
                   <div>
                       <label className='text-sm'>Email</label>
 
-                      <input type="email" placeholder='Your Email' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
+                      <input required type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Your Email' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
                   </div>
 
                  <div>
                       <label className='text-sm'>Address</label>
 
-                      <input type="text" placeholder='Your Address' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
+                      <input required type="text" value={address} onChange={(e)=>setAddress(e.target.value)} placeholder='Your Address' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
                 </div>
 
                 <div>
                   <label className='text-sm'>Phone Number</label>
 
-                  <input type="text" placeholder='Your Email' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
+                  <input required type="text" value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder='Your Email' className='ring mt-2 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#00df9a]' />
               </div>
                   <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Send</button>
               </form>

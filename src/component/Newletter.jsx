@@ -10,16 +10,16 @@ const Newletter = () => {
     const handleSubmit = async(e) => {
             e.preventDefault()
             try {
-              const config = {
-                headers: {
-                    'Content-Type': 'application/json',
-                }
-            };
+            //   const config = {
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     }
+            // };
   
-              const response = await axios.post(`https://theragebackend.pythonanywhere.com/api/newletter/`,{email}, config) 
-              const data = response.data
-              console.log(data)
-              setEmail(data)
+              // const response = await axios.post(`https://theragebackend.pythonanywhere.com/api/newletter/`,{email}, config) 
+              // const data = response.data
+              // console.log(data)
+              // setEmail(data)
               toast.success("You have successfully subscribe to our newsletter!!! stay tuned for more updates.")
               console.log(email)
             } catch (error) {
@@ -37,8 +37,11 @@ const Newletter = () => {
 
           <div className='my-4'>
             <div className='flex flex-col sm:flex-row w-full items-center justify-between'>
-                <input value={email} onChange={(e)=>setEmail(e.target.value)} className='w-full p-3 rounded-md text-black' type="email" placeholder="Email address" />
-                <button onClick={handleSubmit} className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 ml-4 mx-auto py-3 text-black'>Notify me</button>
+              <form className='flex flex-col sm:flex-row w-full items-center justify-between' onSubmit={handleSubmit}>
+                  <input required value={email} onChange={(e)=>setEmail(e.target.value)} className='w-full p-3 rounded-md text-black' type="email" placeholder="Email address" />
+                  <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 ml-4 mx-auto py-3 text-black'>Notify me</button>
+
+              </form>
             </div>
             <p>By subscribing to our newsletter you get all notification at real time <span className='text-[#00df9a]'>terms and condition apply</span></p>
           </div>

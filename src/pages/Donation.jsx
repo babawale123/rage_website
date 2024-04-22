@@ -50,7 +50,7 @@ const Donation = () => {
 
                     <span className='block text-bold text-black'>Step two</span>
                     <span className='block text-bold'>Click on the link below to make a Donation</span>
-                    <a  href="https://sandbox-flw-web-v3.herokuapp.com/donate/enwydxgwnpxq" className='block text-bold'>https://sandbox-flw-web-v3.herokuapp.com/donate/enwydxgwnpxq</a>
+                    <a  href="https://sandbox-flw-web-v3.herokuapp.com/donate/enwydxgwnpxq" className='block text-bold'><span className='text-blue-400'>https://sandbox-flw-web-v3.herokuapp.com/donate/enwydxgwnpxq</span></a>
 
                     <span className='block text-bold text-black'>Step three</span>
                     <span className='block text-bold'>You can fill the form by the right side of the screen to make a donatio and click on the donata button</span>

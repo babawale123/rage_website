@@ -39,7 +39,7 @@ const About = () => {
   return (
     <div>
    
-    <div className='max-w-[1450px] h-[650px] w-full m-auto py-1 px-4 relative group'>
+    <div className='max-w-[1450px] h-[450px] w-full m-auto py-1 px-4 relative group'>
     <Navbar />
         <div style={{backgroundImage:`url(${slider[currentIndex].url})`}} className='bg-white w-full h-full rounded-2xl bg-center bg-cover duration-500'>
         </div>
@@ -61,7 +61,7 @@ const About = () => {
     </div>
 
     <div className=' max-w-[1240px] text-justify mx-auto py-20'>
-            <h1 className='text-3xl m-3 text-gray-300'>About us</h1>
+            <h1 className='text-3xl m-3 mt-5 text-gray-300'>About us</h1>
             <p className='text-white m-3'>R.A.G.E was founded in [year] by a group of passionate individuals who shared a common vision: to empower underprivileged children through education. Inspired by the belief that every child deserves the chance to thrive, we set out on a mission to break the barriers that hinder access to quality schooling for marginalized communities.</p>
 
            <p className='text-white m-3'> <span className='text-2xl text-gray-300'>Our Mission</span> <br />

@@ -39,7 +39,7 @@ const Newletter = () => {
             <div className='flex flex-col sm:flex-row w-full items-center justify-between'>
               <form className='flex flex-col sm:flex-row w-full items-center justify-between' onSubmit={handleSubmit}>
                   <input required value={email} onChange={(e)=>setEmail(e.target.value)} className='w-full p-3 rounded-md text-black' type="email" placeholder="Email address" />
-                  <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 ml-4 mx-auto py-3 text-black'>Notify me</button>
+                  <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 ml-4 mx-auto py-3 text-black'>Subscribe</button>
 
               </form>
             </div>
